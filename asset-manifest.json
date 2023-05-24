@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/petProjectMySerials-frontend/static/css/main.2e4d6aad.css",
+    "main.js": "/petProjectMySerials-frontend/static/js/main.862e7dc3.js",
+    "index.html": "/petProjectMySerials-frontend/index.html",
+    "main.2e4d6aad.css.map": "/petProjectMySerials-frontend/static/css/main.2e4d6aad.css.map",
+    "main.862e7dc3.js.map": "/petProjectMySerials-frontend/static/js/main.862e7dc3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2e4d6aad.css",
+    "static/js/main.862e7dc3.js"
+  ]
+}
