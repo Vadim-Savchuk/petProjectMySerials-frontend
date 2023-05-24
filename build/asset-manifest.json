@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Vadim-Savchuk/firstPetProject.git/static/css/main.2e4d6aad.css",
+    "main.js": "/Vadim-Savchuk/firstPetProject.git/static/js/main.4ccd3075.js",
+    "index.html": "/Vadim-Savchuk/firstPetProject.git/index.html",
+    "main.2e4d6aad.css.map": "/Vadim-Savchuk/firstPetProject.git/static/css/main.2e4d6aad.css.map",
+    "main.4ccd3075.js.map": "/Vadim-Savchuk/firstPetProject.git/static/js/main.4ccd3075.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2e4d6aad.css",
+    "static/js/main.4ccd3075.js"
+  ]
+}

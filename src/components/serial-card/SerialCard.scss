@@ -1,0 +1,91 @@
+.serial {
+    gap: 1%;
+    color: #000;
+    display: flex;
+    font-size: 20px;
+    position: relative;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+    .serial_buttons,
+    .serial_dates {
+        padding: 20px;
+    }
+
+    .serial_dates {
+        gap: 10px;
+        display: flex;
+        flex-basis: 90%;
+        flex-direction: column;
+        background-color: #fff;
+
+        p {
+            display: flex;
+            font-weight: 700;
+            position: relative;
+            align-items: center;
+            justify-content: space-between;
+
+            span {
+                gap: 10px;
+                display: flex;
+
+                button {
+                    width: 40px;
+                    height: 100%;
+                    color: #fff;
+                    font-size: 25px;
+                    background-color: #000;
+
+                    &:hover {
+                        background-color: #bf7e52;
+                    }
+                }
+            }
+        }
+        
+        @media screen and (max-width: 576px) {
+            p {
+                font-size: 17px;
+
+                span {
+                    gap: 5px;
+
+                    button {
+                        width: 30px;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+
+        .serial_name {
+            text-transform: uppercase;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-bottom: 2px solid black;
+        }
+
+        input:not(:last-child) {
+            margin-bottom: 5px;
+        }
+    }
+
+    .serial_buttons {
+        gap: 20px;
+        display: flex;
+        flex-basis: 10%;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #fff;
+
+        button {
+            background-color: transparent;
+        }
+    }
+}

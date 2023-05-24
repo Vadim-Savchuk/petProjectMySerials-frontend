@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+@import './normalize.scss';
+
+html,
+body,
+#root {
+    height: auto;
+    min-height: 100%;
+}
+
+body {
+    height: auto;
+    color: #fff;
+    font-size: 18px;
+    line-height: normal;
+    background: rgb(42, 25, 201);
+    font-family: 'Oswald', sans-serif;
+    background: linear-gradient(241deg, rgba(42, 25, 201, 1) 23%, rgba(48, 40, 119, 1) 92%);
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1240px;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+section {
+    margin: 30px 0px;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.auth {
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    margin-bottom: 10%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+// Скрол
+*{
+    scrollbar-width: thin;
+    scrollbar-color: #fff #bf7e52;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #bf7e52;
+}

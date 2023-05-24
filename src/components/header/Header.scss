@@ -1,0 +1,29 @@
+.header {
+    color: #000;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    background-color: #fff;
+    justify-content: space-between;
+
+    .header__box {
+        gap: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .header_button,
+    .link-login {
+        color: #000;
+        font-size: 20px;
+        transition: 0.2s;
+        padding: 0px 20px;
+        background: transparent;
+    }
+
+    .header_button:hover,
+    .link-login:hover {
+        color: #bf7e52;
+    }
+}

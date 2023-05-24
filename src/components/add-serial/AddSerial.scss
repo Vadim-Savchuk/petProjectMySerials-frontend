@@ -1,0 +1,68 @@
+.add-from {
+    gap: 1%;
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    align-items: flex-end;
+
+    .square {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+
+        label {
+            padding: 0px 20px;
+            margin-bottom: 10px;
+        }
+
+        input {
+            font-size: 18px;
+            padding: 10px 20px;
+        }
+    }
+
+    .hero_square {
+        flex-grow: 6;
+    }
+
+    @media screen and (max-width: 768px) {
+        .hero_square {
+            width: 60%;
+        }
+
+        .square {
+            width: 15%;
+        }
+    }
+
+    button {
+        height: 50%;
+        color: #000;
+        font-size: 18px;
+        transition: 0.2s;
+        padding: 10px 20px;
+        background-color: #fff;
+
+        &:hover {
+            color: #fff;
+            background-color: #bf7e52;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .add-from {
+        gap: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .square, .hero_square {
+            width: 100%;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+}
