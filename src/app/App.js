@@ -19,8 +19,7 @@ function App() {
     }, [dispatch]);
 
     return (
-        <BrowserRouter>
-        {/* <BrowserRouter basename='/petProjectMySerials-frontend/'> */}
+         <BrowserRouter basename='/petProjectMySerials-frontend/'> 
             <Layout>
                 <Routes>
                     

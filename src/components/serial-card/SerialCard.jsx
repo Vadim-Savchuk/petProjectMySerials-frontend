@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch }         from 'react-redux';
 
 import { removeSerial, updateSerial } from '../../redux/serial/serialSlice';
 
-import editButton from './img/edit.png';
+import editButton   from './img/edit.png';
 import delateButton from './img/trash.png';
-import doneButton from './img/check-mark.png';
-import pinButton from './img/thumbtacks.png';
+import doneButton   from './img/check-mark.png';
+import pinButton    from './img/thumbtacks.png';
 import selectButton from './img/thumbtacks-done.png';
 
 import './SerialCard.scss';
@@ -15,7 +15,7 @@ import './SerialCard.scss';
 function SerialCard({ id, name, season, series, attach }) {
     const [isEdit, setIsEdit] = useState(false);
 
-    const [editName, setEditName] = useState(name);
+    const [editName, setEditName]     = useState(name);
     const [editSeason, setEditSeason] = useState(season);
     const [editSeries, setEditSeries] = useState(series);
     const [editAttach, setEditAttack] = useState(attach);

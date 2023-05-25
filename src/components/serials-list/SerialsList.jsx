@@ -1,5 +1,7 @@
-import { useState } from 'react';
-import SerialCard from '../serial-card/SerialCard';
+import { useState }   from 'react';
+
+import SerialCard     from '../serial-card/SerialCard';
+import WatchingSeries from '../watching-series/WatchingSeries';
 
 import './SerialsList.scss';
 
@@ -46,28 +48,7 @@ function SerialsList({ serials }) {
             }
 
 
-            {filter &&
-                (<>
-                    <div className='search-offer'>
-                        <h2 className='title'>{serials.length === 0 ? 'Ви нічого не дивитись' : 'Всього серіалів'} {serials.length}</h2>
-                        {serials.length > 0 && <input type="text" placeholder='Шукати' value={search} onChange={e => setSearch(e.target.value)} />}
-                    </div>
-
-                    <ul className='serials'>
-                        {Array.isArray(serials) &&
-                            filter.reverse().map(serial => {
-                                return <SerialCard
-                                    key={serial._id}
-                                    id={serial._id}
-                                    name={serial.name}
-                                    season={serial.season}
-                                    series={serial.series}
-                                    attach={serial.attach}
-                                />
-                            })
-                        }
-                    </ul>
-                </>)}
+            {filter && <WatchingSeries serials={serials} watching={filter} search={search} setSearch={setSearch}/>}
         </section>
     );
 }

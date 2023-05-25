@@ -21,6 +21,7 @@ function HomePage() {
         <>
             <AddSerial />
             <SerialsList serials={serials} />
+            {loading === true && <Preloader/> }
         </>
     );
 }
