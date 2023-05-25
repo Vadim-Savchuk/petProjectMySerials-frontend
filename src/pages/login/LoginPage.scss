@@ -11,7 +11,12 @@
     input {
         width: 100%;
         font-size: 18px;
+        transition: 0.2s;
         padding: 10px 20px;
+
+        &:focus {
+            box-shadow: #005eb2 0px 0px 0px 3px;
+        }
     }
 
     .form_buttons {
@@ -23,13 +28,24 @@
         .button {
             font-size: 18px;
             flex-basis: 50%;
+            transition: 0.2s;
             padding: 5px 20px;
+
+            &:hover {
+                color: #a08ef4;
+                background-color: #fff655;
+            }
         }
 
         a {
             color: #fff;
             flex-basis: 50%;
+            transition: 0.2s;
             text-align: center;
+
+            &:hover {
+                color: #fff655;
+            }
         }
     }
 }

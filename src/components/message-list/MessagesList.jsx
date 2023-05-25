@@ -7,12 +7,9 @@ function MessagesList({ messages, delateMessage }) {
             {messages.map((message, index) => {
                 return (
                     <li key={index}>
-                        <div className='message'>
+                        <div className='message active'>
                             <p>{message}</p>
                             <button onClick={() => {delateMessage(message)}}>X</button>
-                            <div className='loading'>
-                                <span className='loading-line'></span>
-                            </div>
                         </div>
                     </li>
                 )

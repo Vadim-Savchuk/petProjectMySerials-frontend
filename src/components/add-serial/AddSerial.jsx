@@ -45,9 +45,8 @@ function AddSerial() {
             <h1 className='title'>Додавайте свій серіал</h1>
 
             <form className='add-from' onSubmit={e => e.preventDefault()}>
-
                 <div className='square hero_square'>
-                    <label className='label_name' htmlFor="name">Назва Серіалу</label>
+                    <label className='label_name label_color-one' htmlFor="name">Назва Серіалу</label>
                     <input
                         id='name'
                         type="text"
@@ -59,7 +58,7 @@ function AddSerial() {
                 </div>
 
                 <div className='square'>
-                    <label className='label_date' htmlFor="season">Сезон</label>
+                    <label className='label_date label_color-two' htmlFor="season">Сезон</label>
                     <input
                         id='season'
                         type="number"
@@ -72,7 +71,7 @@ function AddSerial() {
                 </div>
 
                 <div className='square'>
-                    <label className='label_date' htmlFor="series">Серія</label>
+                    <label className='label_date label_color-three' htmlFor="series">Серія на які завершили дивитись</label>
                     <input
                         id='series'
                         type="number"
@@ -82,7 +81,6 @@ function AddSerial() {
                         onChange={e => setSeries(e.target.value)}
                     />
                 </div>
-                
                 <button onClick={formHandler}>Зберегти</button>
             </form>
         </section>

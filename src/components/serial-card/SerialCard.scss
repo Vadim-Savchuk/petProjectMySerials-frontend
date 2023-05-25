@@ -4,26 +4,24 @@
     display: flex;
     font-size: 20px;
     position: relative;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-
-    .serial_buttons,
-    .serial_dates {
-        padding: 20px;
-    }
 
     .serial_dates {
         gap: 10px;
         display: flex;
         flex-basis: 90%;
+        padding: 20px 0px;
         flex-direction: column;
-        background-color: #fff;
+        background-color: #00c68c;
 
         p {
             display: flex;
             font-weight: 700;
+            padding: 0px 20px;
             position: relative;
             align-items: center;
+            text-transform: uppercase;
             justify-content: space-between;
+            
 
             span {
                 gap: 10px;
@@ -39,6 +37,23 @@
                     &:hover {
                         background-color: #bf7e52;
                     }
+                }
+
+                .add-season {
+                    background-color: #c73427;
+                }
+
+                .minus-season {
+                    color: #000;
+                    background-color: #fffa8c;
+                }
+
+                .add-series {
+                    background-color: #004b96;
+                }
+
+                .minus-series {
+                    background-color: #ff8008;
                 }
             }
         }
@@ -58,10 +73,6 @@
             }
         }
 
-        .serial_name {
-            text-transform: uppercase;
-        }
-
         input {
             padding: 10px;
             font-size: 18px;
@@ -78,11 +89,12 @@
     .serial_buttons {
         gap: 20px;
         display: flex;
+        padding: 20px;
         flex-basis: 10%;
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        background-color: #fff;
+        background-color: #ffadf4;
 
         button {
             background-color: transparent;

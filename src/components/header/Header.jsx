@@ -17,7 +17,7 @@ function Header() {
 
     const addMessageFunc = useMessageActions();
 
-    const dispath = useDispatch();
+    const dispath  = useDispatch();
     const navigate = useNavigate();
 
     const logoutHandler = () => {

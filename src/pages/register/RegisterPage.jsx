@@ -1,8 +1,8 @@
-import { useEffect, useState }      from 'react';
+import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link, useNavigate }        from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
-import { registerUser }  from '../../redux/auth/authSlice';
+import { registerUser } from '../../redux/auth/authSlice';
 
 import useMessageActions from '../../hooks/useMessageActions';
 
@@ -20,10 +20,14 @@ function RegisterPage() {
 
     const handleSubmit = () => {
         try {
-            dispatch(registerUser({ username, password }))
+            if (username.length >= 4 && password.length >= 4) {
+                dispatch(registerUser({ username, password }))
 
-            setUsername('')
-            setPassword('')
+                setUsername('')
+                setPassword('')
+            }
+
+            addMessageFunc("Логін та пароль мають бути неменше 4 символів")
         } catch (error) {
             console.log(error);
         }
@@ -49,7 +53,7 @@ function RegisterPage() {
 
             <form className='form' onSubmit={e => e.preventDefault()}>
                 <input
-                    type="email"
+                    type="text"
                     value={username}
                     placeholder='Login'
                     onChange={e => setUsername(e.target.value)}

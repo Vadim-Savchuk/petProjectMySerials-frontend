@@ -1,7 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-    messages: []
+    messages: [],
+    currentIndex: 0,
 }
 
 export const messageSlice = createSlice({
@@ -12,10 +13,7 @@ export const messageSlice = createSlice({
             state.messages.push(action.payload)
         },
         removeMessage: (state, action) => {
-            const messageIndex = state.messages.findIndex(message => message === action.payload);
-            if (messageIndex !== -1) {
-                state.messages.splice(messageIndex, 1);
-            }
+            state.messages = state.messages.filter(message => message !== action.payload);
         },
     }
 })

@@ -13,9 +13,9 @@ body {
     color: #fff;
     font-size: 18px;
     line-height: normal;
-    background: rgb(42, 25, 201);
     font-family: 'Oswald', sans-serif;
-    background: linear-gradient(241deg, rgba(42, 25, 201, 1) 23%, rgba(48, 40, 119, 1) 92%);
+    background: rgb(255, 128, 8);
+    background: linear-gradient(241deg, rgba(255, 128, 8, 1) 0%, rgba(193, 45, 0, 1) 95%);
 }
 
 .container {
@@ -53,7 +53,7 @@ section {
 }
 
 // Скрол
-*{
+* {
     scrollbar-width: thin;
     scrollbar-color: #fff #bf7e52;
 }

@@ -46,11 +46,11 @@ function SerialsList({ serials }) {
             }
 
 
-            {filter.length > 0 &&
+            {filter &&
                 (<>
                     <div className='search-offer'>
-                        <h2 className='title'>Серіалів: {serials.length}</h2>
-                        <input type="text" placeholder='Шукати' value={search} onChange={e => setSearch(e.target.value)} />
+                        <h2 className='title'>{serials.length === 0 ? 'Ви нічого не дивитись' : 'Всього серіалів'} {serials.length}</h2>
+                        {serials.length > 0 && <input type="text" placeholder='Шукати' value={search} onChange={e => setSearch(e.target.value)} />}
                     </div>
 
                     <ul className='serials'>

@@ -2,7 +2,7 @@ import { useEffect, useState }      from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate }        from 'react-router-dom';
 
-import { loginUser }  from '../../redux/auth/authSlice';
+import { loginUser } from '../../redux/auth/authSlice';
 
 import useMessageActions from '../../hooks/useMessageActions';
 
@@ -20,7 +20,11 @@ function LoginPage() {
 
     const handleSubmit = () => {
         try {
-            dispatch(loginUser({ username, password }));
+            if(username && password) {
+                return dispatch(loginUser({ username, password }));
+            }
+
+            addMessageFunc('Переконайтесь що ви заповнили всі поля правильно')
         } catch (error) {
             console.log(error);
         }
